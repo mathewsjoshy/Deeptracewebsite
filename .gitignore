@@ -1,4 +1,4 @@
-# Python
+# --- Python Backend ---
 __pycache__/
 *.py[cod]
 *$py.class
@@ -27,57 +27,51 @@ MANIFEST
 venv/
 env/
 ENV/
-.venv
+.venv/
 
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Node.js
-node_modules/
-npm-debug.log
-yarn-error.log
-.npm
-.eslintcache
-
-# Build outputs
-deeptrace-frontend/dist/
-deeptrace-frontend/build/
-deeptrace-backend/outputs/
-
-# Uploads directory (but keep the README)
+# Uploads and temporary data
 deeptrace-backend/uploads/*
 !deeptrace-backend/uploads/README.md
-
-# Logs
-logs/
-*.log
-
-# OS files
-Thumbs.db
-.DS_Store
-
-# Temporary files
-*.tmp
-*.swp
-*.bak
-
-# Debug files
+deeptrace-backend/outputs/
 debug_output.txt
 debug_output_pipeline.txt
 debug_watermark.py
-repro.js
 build_log.txt
+repro.js
+test_zw.py
 
-# Package manager lock files (optional - uncomment if you want to ignore)
-# package-lock.json
-# yarn.lock
+# --- Node.js Frontend ---
+node_modules/
+deeptrace-frontend/node_modules/
+deeptrace-frontend/dist/
+deeptrace-frontend/dist-ssr/
+deeptrace-frontend/build/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- IDEs & Editors ---
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.sw?
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Environment Variables ---
+.env
+.env.local
+.env.*.local
+*.local
